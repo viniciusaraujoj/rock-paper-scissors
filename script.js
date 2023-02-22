@@ -38,24 +38,3 @@ function round(playerSelection, computerSelection) {
     return "Error";
   }
 }
-
-function game() {
-  for (let i = 0; i < 5; i++) {
-    let playerSelection = prompt("Rock, Paper or Scissors ?");
-    let computerSelection = getComputerChoice();
-    console.log(round(playerSelection, computerSelection));
-  }
-  console.log("\nFinal Score: ");
-  console.log(`Your Score: ${playerScore} - Computer Score: ${computerScore}`);
-  if (playerScore > computerScore) {
-    console.log("You Won! Congrats");
-  } else if (computerScore > playerScore) {
-    console.log("You Lose...");
-  } else {
-    console.log("Nobody Won");
-  }
-  playerScore = 0;
-  computerScore = 0;
-}
-
-game();
