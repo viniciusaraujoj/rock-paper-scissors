@@ -15,7 +15,7 @@ header {
   margin: 0;
   padding: 10px;
   border-bottom: 4px solid #fdb347;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 header h1 {
@@ -27,24 +27,63 @@ header h1 {
 
 /* Game style */
 .game {
-  border: 3px solid #f39507;
+  border: 3px solid black;
   max-width: 1400px;
   margin: 0 auto;
   /* padding: 40px 50px; */
   border-radius: 6px;
-  padding: 150px 200px;
+  padding: 120px 200px;
+  background-color: #0a0a23;
 }
 
 .score {
   display: flex;
   justify-content: space-between;
+  padding: 30px;
+}
+
+.score p {
+  border: 1px solid red;
+  padding: 10px 30px;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.result p,
+.winner {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Press Start 2P", cursive;
+  margin-bottom: 45px;
 }
 
 .result p {
+  color: #fdb347;
+}
+
+.result .winner {
+  color: transparent;
+}
+
+button {
   text-align: center;
-  font-size: 25px;
-  color: red;
-  margin-bottom: 100px;
+  border: 2px solid black;
+  width: 160px;
+  align-self: center;
+  padding: 5px 10px;
+  font-family: "Press Start 2P", cursive;
+}
+
+button:hover {
+  background-color: grey;
+  cursor: pointer;
 }
 
 .choice {
@@ -53,6 +92,7 @@ header h1 {
   /* border: 1px solid red; */
 
   justify-content: space-between;
+  margin-top: 60px;
 }
 
 .card img {
@@ -61,11 +101,11 @@ header h1 {
   min-width: 200px;
   height: 150px;
   border-radius: 10px;
-  border: 3px solid white;
+  border: 3px solid #222222;
   padding: 20px;
 }
 
 .card img:hover {
-  border-color: black;
+  background-color: #2222227a;
   cursor: pointer;
 }
